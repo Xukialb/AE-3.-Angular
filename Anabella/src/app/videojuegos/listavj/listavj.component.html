@@ -10,25 +10,21 @@
     <app-navBar></app-navBar>
   </nav>
   <h1>Listado de videojuegos</h1>
-<table>
-  <thead>
-    <tr>
-      <th>Título</th>
-      <th>Compañía</th>
-      <th>Valoración</th>
-      <th>Detalle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let j of lista">
-      <td>{{j.id}}</td>
-      <td>{{j.titulo}}</td>
-      <td>{{j.rating}}</td>
-      <td><button (click)="navegar(j)">Ver</button></td>
-    </tr>
-  </tbody>
 
-</table>
+  <app-juego1
+  *ngFor="let juego of lista"
+  [juego] = "juego" 
+  (click)="navegar(juego)"
+  >
+  
+
+  </app-juego1>
+    
+
+
+   
+    
+  
 <footer>
   <app-pie-pag></app-pie-pag>
 

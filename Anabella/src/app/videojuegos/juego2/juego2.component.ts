@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Juego } from '../listavj/juego';
 
 @Component({
   selector: 'app-juego2',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Juego2Component implements OnInit {
 
+ 
+
   constructor() { }
+
+
 
   ngOnInit() {
   }
