@@ -1,0 +1,32 @@
+/* detalle-videojuego.component.css */
+h2 {
+    color: #333;
+  }
+  
+  .detail-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .detail-container p {
+    margin: 0;
+  }
+  
+  .detail-container img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .back-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

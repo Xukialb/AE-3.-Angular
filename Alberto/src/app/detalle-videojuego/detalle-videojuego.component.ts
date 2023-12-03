@@ -32,7 +32,7 @@ export class DetalleVideojuegoComponent {
   } else if (id === 2) {
     this.videojuego = {
       id: id,
-      titulo: 'The Last of Us',
+      titulo: 'The Last of Us Remastered',
       compañia: 'Naughty Dog',
       imagen: 'assets/imagenes/tlou.jpg',
       valoracion: 4.8
@@ -41,7 +41,7 @@ export class DetalleVideojuegoComponent {
     this.videojuego = {
       id: id,
       titulo: 'Marvels Spider-man',
-      compañia: 'Insoniac Games',
+      compañia: 'Imsoniac Games',
       imagen: 'assets/imagenes/spiderman.jpg',
       valoracion: 4.5
     };

@@ -1,16 +1,17 @@
-<!-- app/detalle-videojuego/detalle-videojuego.component.html -->
-<h2>Detalle del Videojuego</h2>
+<!-- detalle-videojuego.component.html -->
+<h2 style="color: #333;">Detalle del Videojuego</h2>
 
-<div *ngIf="videojuego">
-  <p>ID: {{ videojuego.id }}</p>
-  <p>Título: {{ videojuego.titulo }}</p>
-  <p>Compañía: {{ videojuego['compañia'] }}</p>
-  <p>Valoración: {{ videojuego['valoracion'] }}</p>
-  <p>Imagen:</p>
-  <img [src]="videojuego.imagen" alt="Imagen del videojuego">
+<div *ngIf="videojuego" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+  <p><strong>ID:</strong> {{ videojuego.id }}</p>
+  <p><strong>Título:</strong> {{ videojuego.titulo }}</p>
+  <p><strong>Compañía:</strong> {{ videojuego['compañia'] }}</p>
+  <p><strong>Valoración:</strong> {{ videojuego['valoracion'] }}</p>
+  <p><strong>Imagen:</strong></p>
+  <img [src]="videojuego.imagen" alt="Imagen del videojuego" style="max-width: 100%; border-radius: 5px; margin-top: 10px;">
 </div>
 
-<button [routerLink]="['/']">Volver</button>
+<button [routerLink]="['/']" style="margin-top: 20px; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Volver</button>
+
 
 
 
