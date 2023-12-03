@@ -1,0 +1,32 @@
+/* Estilos para la sección Nosotros */
+#nosotros {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+#nosotros h2 {
+    color: #333;
+}
+
+#nosotros strong {
+    color: #e44d26; /* Color destacado para el nombre de la web */
+}
+
+#nosotros p {
+    color: #666;
+    line-height: 1.6;
+}
+
+#nosotros h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -34,7 +34,7 @@ export class DetalleVideojuegoComponent {
       id: id,
       titulo: 'The Last of Us',
       compañia: 'Naughty Dog',
-      imagen: 'assets\imagenes\tlou.jpg',
+      imagen: 'assets/imagenes/tlou.jpg',
       valoracion: 4.8
     };
   } else if (id === 3) {
@@ -42,7 +42,7 @@ export class DetalleVideojuegoComponent {
       id: id,
       titulo: 'Marvels Spider-man',
       compañia: 'Insoniac Games',
-      imagen: 'assets\imagenes\spiderman.jpg',
+      imagen: 'assets/imagenes/spiderman.jpg',
       valoracion: 4.5
     };
   } else if (id === 4) {
@@ -50,7 +50,7 @@ export class DetalleVideojuegoComponent {
       id: id,
       titulo: 'Microsoft Flight Simulator',
       compañia: 'Microsoft Games',
-      imagen: 'assets\imagenes\mfs.jpg',
+      imagen: 'assets/imagenes/mfs.jpg',
       valoracion: 4.8
     };
   } else if (id === 5) {
@@ -58,7 +58,7 @@ export class DetalleVideojuegoComponent {
       id: id,
       titulo: 'Red Dead Redemption II',
       compañia: 'Rockstar Games',
-      imagen: 'assets\imagenes\rdd2.jpg',
+      imagen: 'assets/imagenes/rdd2.jpg',
       valoracion: 4.5
     };
   }

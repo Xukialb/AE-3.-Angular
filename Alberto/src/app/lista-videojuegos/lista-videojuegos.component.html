@@ -1,11 +1,21 @@
 <!-- lista-videojuegos.component.html -->
 <h1>Bienvenido, [Nombre de Usuario]</h1>
 
-<ul>
-  <li *ngFor="let videojuego of videojuegos">
-    <a [routerLink]="'/videojuego/' + videojuego.id">
-      {{ 'Id:'+videojuego.id }} - {{ 'Título: '+videojuego.titulo }} - {{ 'Valoración: '+ videojuego.valoracion }}
-    </a>
-  </li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Valoración</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let videojuego of videojuegos" [routerLink]="'/videojuego/' + videojuego.id">
+      <td>{{ videojuego.id }}</td>
+      <td>{{ videojuego.titulo }}</td>
+      <td>{{ videojuego.valoracion }}</td>
+    </tr>
+  </tbody>
+</table>
+
 
