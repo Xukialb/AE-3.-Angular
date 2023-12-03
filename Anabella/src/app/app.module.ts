@@ -12,13 +12,14 @@ import { PiePagComponent } from './general/pie-pag/pie-pag.component';
 import { NavBarComponent } from './general/pie-pag/navBar/navBar.component';
 import { HeaderComponent } from './general/pie-pag/header/header.component';
 import { NosotrosComponent } from './general/pie-pag/nosotros/nosotros.component';
+import { Juego4Component } from './videojuegos/juego4/juego4.component';
 
 
 
 @NgModule({
   declarations: [	
     AppComponent,ListavjComponent, Juego1Component, Juego2Component, Juego3Component, PiePagComponent,
-      NavBarComponent, HeaderComponent, NosotrosComponent, 
+      NavBarComponent, HeaderComponent, NosotrosComponent, Juego4Component,
    ],
   imports: [
     BrowserModule,
