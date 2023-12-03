@@ -1,0 +1,15 @@
+<!-- app/detalle-videojuego/detalle-videojuego.component.html -->
+<h2>Detalle del Videojuego</h2>
+
+<div *ngIf="videojuego">
+  <p>ID: {{ videojuego.id }}</p>
+  <p>Título: {{ videojuego.titulo }}</p>
+  <p>Compañía: {{ videojuego['compañia'] }}</p>
+  <p>Imagen: {{ videojuego['imagen'] }}</p>
+  <p>Valoración: {{ videojuego['valoracion'] }}</p>
+</div>
+
+<button routerLink="/lista-videojuegos">Volver</button>
+
+
+

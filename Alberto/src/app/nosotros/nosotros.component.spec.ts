@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Vdj4Component } from './vdj4.component';
+import { NosotrosComponent } from './nosotros.component';
 
-describe('Vdj4Component', () => {
-  let component: Vdj4Component;
-  let fixture: ComponentFixture<Vdj4Component>;
+describe('NosotrosComponent', () => {
+  let component: NosotrosComponent;
+  let fixture: ComponentFixture<NosotrosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Vdj4Component ]
+      declarations: [ NosotrosComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Vdj4Component);
+    fixture = TestBed.createComponent(NosotrosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
