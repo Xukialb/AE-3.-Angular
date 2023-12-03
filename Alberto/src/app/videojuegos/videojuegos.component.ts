@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-lista-videojuegos',
-  templateUrl: './lista-videojuegos.component.html',
-  styleUrls: ['./lista-videojuegos.component.css']
+  templateUrl: './videojuegos.component.html',
+  styleUrls: ['./videojuegos.component.css']
 })
 export class ListaVideojuegosComponent {
 

@@ -1,21 +1,20 @@
+// app-routing.module.ts
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { ListaVideojuegosComponent } from './lista-videojuegos/lista-videojuegos.component';
-import { DetalleVideojuegoComponent } from './detalle-videojuego/detalle-videojuego.component';
+import { VideojuegosComponent } from './videojuegos/videojuegos.component';
+import { VideojuegoDetalle } from './videojuego-detalle/videojuego-detalle.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
-
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
   { path: '', component: HomeComponent },
-  { path: 'lista-videojuegos', component: ListaVideojuegosComponent},
-  { path: 'videojuego/:id', component: DetalleVideojuegoComponent },
+  { path: 'videojuegos', component: VideojuegosComponent },
+  { path: 'videojuego/:id', component: VideojuegoDetalleComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'nosotros', component: NosotrosComponent },
-  { path: '**', redirectTo: '' } // Ruta por defecto
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({
@@ -23,3 +22,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

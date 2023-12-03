@@ -1,1 +1,17 @@
-<p>home works!</p>
+<!-- home.component.html -->
+<div *ngIf="usuarioAutenticado; else loginForm">
+    <h2>Bienvenido, {{ nombreUsuario }}</h2>
+    <h3>Listado de Videojuegos</h3>
+    <ul>
+      <li *ngFor="let juego of videojuegos">
+        <a [routerLink]="['/lista-videojuegos', juego.id]">
+          ID: {{ juego.id }} - Título: {{ juego.titulo }} - Valoración: {{ juego.valoracion }}
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <ng-template #loginForm>
+    <button (click)="onButtonClick($event)">Click me</button>
+  </ng-template>
+  

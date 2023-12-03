@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListaVideojuegosComponent } from './lista-videojuegos/lista-videojuegos.component';
-import { DetalleVideojuegoComponent } from './detalle-videojuego/detalle-videojuego.component';
+import { VideojuegosComponent } from './videojuegos/videojuegos.component';
+import { VideojuegoDetalle } from './VideojuegoDetalle/VideojuegoDetalle.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { LoginComponent } from './login/login.component';
@@ -13,8 +13,8 @@ import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ListaVideojuegosComponent,
-    DetalleVideojuegoComponent,
+    VideojuegosComponent,
+    VideojuegoDetalleComponent,
     ContactoComponent,
     NosotrosComponent,
     LoginComponent,
@@ -22,7 +22,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

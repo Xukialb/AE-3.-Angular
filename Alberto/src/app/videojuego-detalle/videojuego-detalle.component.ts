@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-detalle-videojuego',
-  templateUrl: './detalle-videojuego.component.html',
-  styleUrls: ['./detalle-videojuego.component.css']
+  selector: 'app-videojuego-detalle',
+  templateUrl: './videojuego-detalle.component.html',
+  styleUrls: ['./videojuego-detalle.component.css']
 })
 export class DetalleVideojuegoComponent {
   videojuegoId: number;

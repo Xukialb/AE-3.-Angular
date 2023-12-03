@@ -1,5 +1,6 @@
+// login.component.ts
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,25 +8,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  usuarios = [
-    { usuario: 'usuario1', contraseña: 'clave1' },
-    { usuario: 'usuario2', contraseña: 'clave2' }
-  ];
+  loginForm: FormGroup;
 
-  usuario: string = '';
-  contraseña: string = '';
-  mensajeError: string = '';
-
-  constructor(private router: Router) {}
+  constructor(private fb: FormBuilder) {
+    this.loginForm = this.fb.group({
+      usuario: ['', Validators.required],
+      contraseña: ['', Validators.required]
+    });
+  }
 
   iniciarSesion(): void {
-    const usuarioEncontrado = this.usuarios.find(u => u.usuario === this.usuario && u.contraseña === this.contraseña);
-
-    if (usuarioEncontrado) {
-      this.router.navigate(['/']);
+    if (this.loginForm.valid) {
+      // Tu lógica de inicio de sesión aquí
+      console.log('Inicio de sesión exitoso');
     } else {
-      this.mensajeError = 'Credenciales incorrectas. Por favor, inténtalo de nuevo.';
+      console.log('Formulario no válido. Verifica los campos.');
     }
   }
 }
+
 
