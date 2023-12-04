@@ -11,12 +11,13 @@ import { HeaderComponent } from './general/header/header.component';
 import { NavBarComponent } from './general/navBar/navBar.component';
 import { NosotrosComponent } from './general/nosotros/nosotros.component';
 import { PiePagComponent } from './general/pie-pag.component';
+import { ContactoComponent } from './general/contacto/contacto.component';
 
 @NgModule({
   declarations: [	
     AppComponent,
       LoginComponent, ListaVideojuegosComponent, DetalleVideojuegoComponent, HeaderComponent,
-      NavBarComponent, NosotrosComponent, PiePagComponent,
+      NavBarComponent, NosotrosComponent, PiePagComponent, ContactoComponent
    ],
   imports: [
     BrowserModule,
