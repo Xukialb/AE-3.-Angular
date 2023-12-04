@@ -5,7 +5,7 @@ body{
     width: 100%;    
     }
 
-.p1, .p2{ 
+.p1, .p2, .p3{ 
     font-weight: bold;
     padding: 1%;
     font-size: 16px;
