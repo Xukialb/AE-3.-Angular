@@ -44,6 +44,7 @@ passwordObligatorioOculto = true
     } else 
       // Mostramos el mensaje de login inválido
       console.log('Login inválido');
+      alert("No se ha podido realizar el login (usuario y/o contraseña incorrectos)");
       this.ocultarMensajeError(form)
      
     }
