@@ -16,7 +16,7 @@ export class DetalleVideojuegoComponent {
     // Inicialización de la variable videojuegoId con un valor predeterminado
     this.videojuegoId = 0;
 
-    // Suscripción a los cambios en los parámetros de la ruta
+    // Inicialización de la variable videojuegoId con un valor predeterminado
     this.route.params.subscribe(params => {
       // Actualización de videojuegoId con el valor proporcionado en los parámetros de la ruta
       this.videojuegoId = +params['id'];

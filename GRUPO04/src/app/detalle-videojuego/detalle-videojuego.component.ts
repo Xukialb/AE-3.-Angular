@@ -7,20 +7,31 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./detalle-videojuego.component.css']
 })
 export class DetalleVideojuegoComponent {
-  videojuegoId: number;
-  videojuego: any; // Puedes usar un modelo si prefieres
 
+  // Declaración de variables de clase
+  videojuegoId: number;
+  videojuego: any; 
+
+  // Constructor del componente que recibe una instancia de ActivatedRoute
   constructor(private route: ActivatedRoute) {
+    // Inicialización de la variable videojuegoId con un valor predeterminado
     this.videojuegoId = 0;
+
+    // Inicialización de la variable videojuegoId con un valor predeterminado
     this.route.params.subscribe(params => {
+
+      // Actualización de videojuegoId con el valor proporcionado en los parámetros de la ruta
       this.videojuegoId = +params['id'];
+
+       // Llamada a la función para cargar los detalles del videojuego
       this.cargarDetalleVideojuego(this.videojuegoId);
-      // Aquí cargarías los detalles del videojuego directamente, por ejemplo:  
+     
     });
   }
+  // Función para cargar los detalles del videojuego
   cargarDetalleVideojuego(id: number) {
-    // Aquí deberías implementar la lógica para cargar el videojuego según el ID
-    // Por ahora, se proporciona un ejemplo con datos estáticos
+   
+    // Condicionales para determinar qué detalles cargar basados en el id proporcionado
     if (id === 1) {
     this.videojuego = {
       id: id,

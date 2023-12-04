@@ -1,9 +1,14 @@
 <!-- app/detalle-videojuego/detalle-videojuego.component.html -->
+
+<!-- Encabezado del detalle del videojuego -->
 <app-header></app-header>
+
+<!--Recupera el componente de la barra de navegación-->
 <app-navBar></app-navBar>
 <body>
 <h2>Detalle del Videojuego</h2>
 
+ <!--Generamos la tabla de forma dinámica, iterando en el array que contiene los juegos-->
 <div *ngIf="videojuego">
   <p>ID: {{ videojuego.id }}</p>
   <p>Título: {{ videojuego.titulo }}</p>
@@ -15,6 +20,7 @@
 
 <button [routerLink]="['/lista']">Volver</button>
 
+<!--Recupera el componente del pie de página-->
 <app-pie-pag></app-pie-pag>
 
 </body>
