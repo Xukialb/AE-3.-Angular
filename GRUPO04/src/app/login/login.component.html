@@ -1,0 +1,13 @@
+<body>
+ 
+<h1>Formulario de login</h1>
+<form #myForm="ngForm" (ngSubmit)="login(myForm)">
+  <label>Email</label>
+  <input type="text" name="user" placeholder="escribe tu nombre de usuario" ngModel><br/><br/>
+  <label>Contraseña</label>
+  <input type="password" name="password" placeholder="escribe tu contraseña" ngModel><br/><br/>
+
+  <button type="submit">Login</button>
+</form>
+
+</body>

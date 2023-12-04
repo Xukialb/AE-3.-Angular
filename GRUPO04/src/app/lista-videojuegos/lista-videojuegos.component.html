@@ -1,0 +1,28 @@
+<!-- lista-videojuegos.component.html -->
+<app-header></app-header>
+<app-navBar></app-navBar>
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Valoración</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let videojuego of videojuegos" [routerLink]="'/videojuego/' + videojuego.id">
+      <td>{{ videojuego.id }}</td>
+      <td>{{ videojuego.titulo }}</td>
+      <td>{{ videojuego.valoracion }}</td>
+    </tr>
+
+   
+  </tbody>
+
+</table>
+</div>
+ <app-pie-pag></app-pie-pag> 
+
+ 
+
