@@ -10,7 +10,8 @@
 }
 
 #nosotros strong {
-    color: #e44d26; /* Color destacado para el nombre de la web */
+    color: black; /* Color destacado para el nombre de la web */
+    font-weight: bold;
 }
 
 #nosotros p {
