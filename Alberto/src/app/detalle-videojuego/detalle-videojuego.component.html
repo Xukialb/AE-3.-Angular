@@ -1,17 +1,30 @@
 <!-- app/detalle-videojuego/detalle-videojuego.component.html -->
+
+<!-- Encabezado del detalle del videojuego -->
 <h2>Detalle del Videojuego</h2>
 
+<!-- Utilización de *ngIf para condicionalmente renderizar el contenido basado en la existencia de 'videojuego' -->
 <div *ngIf="videojuego">
+  <!-- Detalles del videojuego, solo renderizados si 'videojuego' existe -->
+
+  <!-- Muestra el ID del videojuego -->
   <p>ID: {{ videojuego.id }}</p>
+
+  <!-- Muestra el Título del videojuego -->
   <p>Título: {{ videojuego.titulo }}</p>
+
+  <!-- Muestra la Compañía del videojuego, utilizando corchetes para manejar la propiedad con un nombre que contiene acentos -->
   <p>Compañía: {{ videojuego['compañia'] }}</p>
+
+  <!-- Muestra la Valoración del videojuego -->
   <p>Valoración: {{ videojuego['valoracion'] }}</p>
+
+  <!-- Muestra un texto adicional para la sección de la Imagen del videojuego -->
   <p>Imagen:</p>
+
+  <!-- Utiliza una directiva de enlace de propiedad (property binding) para establecer la fuente de la imagen basada en 'videojuego.imagen' -->
   <img [src]="videojuego.imagen" alt="Imagen del videojuego">
 </div>
 
+<!-- Botón para volver a la página principal, utiliza property binding para establecer la ruta de redireccionamiento -->
 <button [routerLink]="['/']">Volver</button>
-
-
-
-
