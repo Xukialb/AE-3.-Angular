@@ -1,5 +1,8 @@
 <!-- lista-videojuegos.component.html -->
+<!--Recupera el componente de la cabecera-->
 <app-header></app-header>
+
+<!--Recupera el componente de la barra de navegación-->
 <app-navBar></app-navBar>
 <div>
 <table>
@@ -11,6 +14,7 @@
     </tr>
   </thead>
   <tbody>
+    <!--Generamos la tabla de forma dinámica, iterando en el array que contiene los juegos-->
     <tr *ngFor="let videojuego of videojuegos" [routerLink]="'/videojuego/' + videojuego.id">
       <td>{{ videojuego.id }}</td>
       <td>{{ videojuego.titulo }}</td>
@@ -22,6 +26,7 @@
 
 </table>
 </div>
+<!--Recupera el componente del pie de página-->
  <app-pie-pag></app-pie-pag> 
 
  
