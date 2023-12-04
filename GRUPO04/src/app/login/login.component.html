@@ -6,13 +6,13 @@
 <form #myForm="ngForm" (ngSubmit)="login(myForm)">
   <label>Usuario</label>  
   <input type="text" name="user" placeholder="escribe tu nombre de usuario" ngModel>
-  <span [hidden]="usuarioObligatorioOculto">El usuario es obligatorio</span>
+  <span [hidden]="usuarioObligatorioOculto">El usuario es obligatorio</span>  
   <br/><br/>
   <label>Contraseña</label>
   <input type="password" name="password" placeholder="escribe tu contraseña" ngModel>
-  <span [hidden]="passwordObligatorioOculto">El password es obligatorio</span>
+  <span [hidden]="passwordObligatorioOculto" >El password es obligatorio</span>  
   <br/><br/>
-
+  <span [hidden]="usuarioIncorrecto">Usuario o contraseña incorrectos</span><br/>
   <button type="submit">Login</button>
 </form>
 

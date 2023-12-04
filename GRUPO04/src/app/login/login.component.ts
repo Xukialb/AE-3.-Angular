@@ -21,6 +21,8 @@ export class LoginComponent implements OnInit {
 
 usuarioObligatorioOculto = true
 passwordObligatorioOculto = true
+usuarioIncorrecto = true
+passwordIncorrecto=true
 
 
  constructor(private router : Router) {}  
@@ -41,7 +43,8 @@ passwordObligatorioOculto = true
       console.log('Login exitoso');
       this.usuario = user;
       this.router.navigate(['/lista', { usuario: this.usuario }]);
-    } else 
+    }     
+    else 
       // Mostramos el mensaje de login inválido
       console.log('Login inválido');
       alert("No se ha podido realizar el login (usuario y/o contraseña incorrectos)");
@@ -54,18 +57,28 @@ passwordObligatorioOculto = true
       // Oculta el mensaje de error para todos los campos
       this.usuarioObligatorioOculto = true;
       this.passwordObligatorioOculto = true;
-  
+      this.usuarioObligatorioOculto = true;
+      this.passwordObligatorioOculto = true;
+        
       // Muestra el mensaje de error solo si no se completa el usuario
       if (!form.value.user) {
         this.usuarioObligatorioOculto = false;
+        
       }
       // Muestra el mensaje de error solo si no se completa el password
       if (!form.value.password) {
         this.passwordObligatorioOculto = false;
       }
-    }
+
+      if(form.value.user !== this.usuariosValidos){
+        this.usuarioIncorrecto=false
+      }
+  
   }
 
+ 
+  
+}
   
 
    
