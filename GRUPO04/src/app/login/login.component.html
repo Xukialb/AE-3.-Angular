@@ -1,11 +1,17 @@
 <body>
- 
+<!--#myForm="ngForm" crea una referencia local llamada myForm al formulario y la asocia con el servicio ngForm.-->
+<!--Usamos ngModel  para vincular los campos usuario y contraseña con el modelo en el componente de Angular.-->
+<!--Los mensajes de error de la etiqueta span permanecen ocultos-->
 <h1>Formulario de login</h1>
 <form #myForm="ngForm" (ngSubmit)="login(myForm)">
-  <label>Email</label>
-  <input type="text" name="user" placeholder="escribe tu nombre de usuario" ngModel><br/><br/>
+  <label>Usuario</label>  
+  <input type="text" name="user" placeholder="escribe tu nombre de usuario" ngModel>
+  <span [hidden]="usuarioObligatorioOculto">El usuario es obligatorio</span>
+  <br/><br/>
   <label>Contraseña</label>
-  <input type="password" name="password" placeholder="escribe tu contraseña" ngModel><br/><br/>
+  <input type="password" name="password" placeholder="escribe tu contraseña" ngModel>
+  <span [hidden]="passwordObligatorioOculto">El password es obligatorio</span>
+  <br/><br/>
 
   <button type="submit">Login</button>
 </form>

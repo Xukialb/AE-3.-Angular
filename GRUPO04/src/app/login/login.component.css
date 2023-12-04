@@ -35,3 +35,7 @@ button{
     background-color: rgb(97, 80, 114); 
     color: white;   
 }
+
+span{
+    color: red;
+}
