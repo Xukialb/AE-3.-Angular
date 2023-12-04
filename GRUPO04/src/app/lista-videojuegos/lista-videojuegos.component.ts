@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ListaVideojuegosComponent {
 
+  //Definimos la lista de juegos
   videojuegos = [
     { id: 1, titulo: 'Zelda Breath of the Wild', valoracion: 4.5, compañia: 'Nintendo', imagen: 'Alberto\src\assets\imagenes\zbotw.jpg' },
     { id: 2, titulo: 'The Last of Us', valoracion: 4.8, compañia: 'Naughty Dog', imagen: 'Alberto\src\assets\imagenes\tlou.jpg' },

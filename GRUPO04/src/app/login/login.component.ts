@@ -21,12 +21,13 @@ login(form: NgForm): any {
     const password = form.value.password;
 
     if (user && password) {
-    console.log('Login successful');
+    //Mostramos mensaje de login exitoso
+    console.log('Login exitoso');
     this.router.navigate(['/lista']);
 
     } else {
-      // Handle invalid login attempt
-      console.log('Invalid login attempt');
+      // Mostramos el mensaje de login inválido
+      console.log('Login inválido');
     }
   }
 }
