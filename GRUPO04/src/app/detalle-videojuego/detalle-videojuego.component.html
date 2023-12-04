@@ -1,0 +1,22 @@
+<!-- app/detalle-videojuego/detalle-videojuego.component.html -->
+<app-header></app-header>
+<app-navBar></app-navBar>
+<body>
+<h2>Detalle del Videojuego</h2>
+
+<div *ngIf="videojuego">
+  <p>ID: {{ videojuego.id }}</p>
+  <p>Título: {{ videojuego.titulo }}</p>
+  <p>Compañía: {{ videojuego['compañia'] }}</p>
+  <p>Valoración: {{ videojuego['valoracion'] }}</p>
+  <p>Imagen:</p>
+  <img [src]="videojuego.imagen" alt="Imagen del videojuego">
+</div>
+
+<button [routerLink]="['/lista']">Volver</button>
+
+<app-pie-pag></app-pie-pag>
+
+</body>
+
+

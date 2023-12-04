@@ -1,0 +1,12 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(58, 14, 100);
+    background-image: url(src\assets\imagenes\fondo.jpg); 
+    background-size: contain;  
+    color: antiquewhite;
+    font-size: 28px;
+    }
