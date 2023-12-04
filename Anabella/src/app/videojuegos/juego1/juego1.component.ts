@@ -9,6 +9,7 @@ import { Juego } from '../listavj/juego';
 })
 export class Juego1Component implements OnInit {
 
+  @Input() juego : Juego
 
  
  

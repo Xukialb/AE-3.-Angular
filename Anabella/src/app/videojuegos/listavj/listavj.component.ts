@@ -11,6 +11,7 @@ import { Juego } from './juego';
 export class ListavjComponent implements OnInit { 
 
 lista : Juego[]=[]
+
  
   constructor(private router : Router) {   
     let juego =new Juego( "Elden Ring", "FromSoftware", 9.69)
@@ -18,8 +19,7 @@ lista : Juego[]=[]
     juego =new Juego( "Baldur's Gate 3", "Larian Studios", 9.57)
     this.lista.push(juego);
     juego =new Juego( "The Witcher 3", "CD Projekt", 9.35)
-    this.lista.push(juego);
-
+    this.lista.push(juego);    
   } 
  
   public navegar(juego: Juego) {
@@ -28,7 +28,8 @@ lista : Juego[]=[]
     switch (juego.titulo.toLowerCase()) {
       case "elden ring":
         console.log("Condición 1 cumplida");
-        this.router.navigate(["/juego1"]);
+        this.router.navigate(["/juego4"]);
+        
         break;
       case "baldur's gate 3":
         console.log("Condición 2 cumplida");
